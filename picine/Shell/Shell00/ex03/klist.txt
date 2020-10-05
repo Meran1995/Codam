@@ -1,0 +1,5 @@
+Credentials cache: API:77537
+        Principal: mnezar-h@CODAM.NL
+
+  Issued                Expires               Principal
+Sep  8 13:13:58 2020  Sep 15 13:13:37 2020  krbtgt/CODAM.NL@CODAM.NL
