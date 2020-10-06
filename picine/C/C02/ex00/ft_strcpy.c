@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_swap.c                                          :+:    :+:            */
+/*   ft_strcpy.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: mnezar-h <marvin@codam.nl>                   +#+                     */
+/*   By: anonymous <anonymous@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/09/20 20:40:34 by mnezar-h      #+#    #+#                 */
-/*   Updated: 2020/10/06 03:04:16 by mnezar-h     ########   odam.nl         */
+/*   Created: 2020/10/06 00:55:24 by anonymous     #+#    #+#                 */
+/*   Updated: 2020/10/06 00:55:24 by anonymous     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
+char		*ft_strcpy(char *dest, char *src)
 {
-	int temp;
+	int i;
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
