@@ -12,19 +12,16 @@
 
 #include <stdio.h>
 
-char 	*ft_strcpy(char *dest, char *src);
+char	*ft_strcpy(char *dest, char *src);
 
 int		main(void)
 {
 	char src[20] = "I love basketball";
 	char dest[20];
-	int i;
 
-	i = 20;
-	// printf("%s\n", &src[i]);
-	printf("%s\n", &dest[i]);
-	ft_strcpy(&dest[i], &src[i]);
-	// printf("%s\n", &src[i]);
-	printf("%s\n", &dest[i]);
+	printf("%s\n", src);
+	ft_strcpy(dest, src);
+	printf("%s\n", src);
+	printf("%s\n", dest);
 	return (0);
 }

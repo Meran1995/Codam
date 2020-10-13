@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strcpy.c                                        :+:    :+:            */
+/*   test_strncp.c                                      :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: anonymous <anonymous@student.codam.nl>       +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/06 00:55:24 by anonymous     #+#    #+#                 */
-/*   Updated: 2020/10/06 00:55:24 by anonymous     ########   odam.nl         */
+/*   Created: 2020/10/06 23:00:43 by anonymous     #+#    #+#                 */
+/*   Updated: 2020/10/06 23:00:43 by anonymous     ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
-{
-	int i;
+#include <stdio.h>
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+char	*ft_strncpy(char *dest, char *src, unsigned int n);
+
+int		main(void)
+{
+	char src[25] = "Lets get coding guys!";
+	char dest[25];
+	int n;
+
+	n = 25;
+	printf("%s\n", src);
+	printf("%s\n", dest);
+	printf("%d\n", n);
+	ft_strncpy(dest, src, n);
+	printf("%s\n", src);
+	printf("%s\n", dest);
+	printf("%d\n", n);
+	return (0);
 }
